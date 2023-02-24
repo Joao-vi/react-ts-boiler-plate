@@ -1,28 +1,16 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  extends: ['standard-with-typescript', 'prettier', 'plugin:react/jsx-runtime', 'plugin:react-hooks/recommended'],
   parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    project: './tsconfig.json',
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-  plugins: ['css-modules'],
-  extends: [
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'plugin:css-modules/recommended',
-    'plugin:prettier/recommended',
-  ],
+
   rules: {
-    'prettier/indent': 'off',
-    indent: ['error', 2],
-    'react/display-name': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
 };
