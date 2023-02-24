@@ -9,7 +9,7 @@
     "build": "webpack --mode production --config ./webpack.prod.js",
     "lint": "eslint ./src/**/*",
     "lint:fix": "yarn lint --fix",
-    "test": "yarn jest --",
+    "test": "yarn jest",
     "test:watch": "yarn jest --watch",
     "test:coverage": "yarn jest --coverage",
     "test:staged": "yarn jest --findRelatedTests --passWithNoTests",
