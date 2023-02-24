@@ -2,6 +2,7 @@
   "name": "react-typescript-jest-boilerplate",
   "version": "1.4.0",
   "description": "Boilerplate for React app with Typescript and Jest lib",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --hot --config ./webpack.dev.js",
@@ -14,7 +15,6 @@
     "test:staged": "yarn jest --findRelatedTests --passWithNoTests",
     "prepare": "husky install"
   },
-  "license": "ISC",
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "yarn lint:fix",
@@ -23,6 +23,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
     "@types/jest": "29.4.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
@@ -43,6 +44,8 @@
     "html-webpack-plugin": "5.5.0",
     "husky": "8.0.3",
     "identity-obj-proxy": "3.0.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
     "lint-staged": "^13.1.2",
     "mini-css-extract-plugin": "2.7.2",
     "prettier": "2.8.3",
@@ -58,10 +61,8 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
-    "jest": "29.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.8.0",
-    "react-test-renderer": "18.2.0"
+    "react-router-dom": "6.8.0"
   }
 }
