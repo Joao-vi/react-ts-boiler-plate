@@ -1,6 +1,4 @@
 node_modules
-test-coverage
-.history
+.vscode
+coverage
 dist
-tests/cypress/video
-tests/cypress/screenshots
